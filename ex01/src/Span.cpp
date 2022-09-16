@@ -63,6 +63,15 @@ void	Span::addNumber(int number){
 	else
 		throw std::out_of_range("span is full");
 }
+void	Span::addNumber(std::vector<int> anotherVector){
+
+	std::vector<int>::iterator it;
+	it = _intArray.end();
+	if (anotherVector.size() <= _n - _intArray.size())
+		_intArray.insert(it, anotherVector.begin(), anotherVector.end());
+	else
+		throw std::out_of_range("the numbers you try to insert exceed the spans limit");
+}
 
 unsigned int Span::shortestSpan(){
 	
@@ -103,6 +112,13 @@ unsigned int Span::longestSpan(){
 unsigned int Span::getStorage(void) const{
 
 	return (this->_n);
+}
+int				Span::getValue(unsigned int i)const{
+	return (this->_intArray[i]);
+}
+std::vector<int>&	Span::getVector(){
+
+	return (this->_intArray);
 }
 
 

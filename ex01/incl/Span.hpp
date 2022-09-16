@@ -19,9 +19,11 @@ class Span
 		Span &		operator=( Span const & rhs );
 		void	addNumber(int number);
 		unsigned int getStorage(void) const;
+		int				getValue(unsigned int i)const;
+		std::vector<int>& getVector();
 		unsigned int shortestSpan();
 		unsigned int longestSpan();
-		// void	addManyNumbers(int number);
+		void	addNumber(std::vector<int> anotherVector);
 		//
 
 	private:
