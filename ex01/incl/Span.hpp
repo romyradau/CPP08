@@ -1,6 +1,6 @@
 #ifndef SPAN_HPP
 # define SPAN_HPP
-
+# include <stack>
 # include <iostream>
 # include <string>
 # include <vector>
