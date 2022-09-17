@@ -15,7 +15,11 @@ Span::Span(unsigned int N): _n(N)
 
 Span::Span( const Span & src )
 {
-	*this = src;
+	if (this != &src){
+		
+		*this = src;
+	}
+
 }
 
 
@@ -38,7 +42,7 @@ Span &				Span::operator=( Span const & rhs )
 	{
 		this->_n = rhs.getStorage();
 		_intArray = rhs._intArray;
-		//container ahben auch den assignment operator!
+		//container already have the assignment operator included!
 	}
 	return *this;
 }

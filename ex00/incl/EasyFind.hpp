@@ -25,6 +25,7 @@ template<typename T>
 void	easyfind2(T container, int& value){
 
 	typename T::iterator IT;
+	//std::list<int>::iterator
 	//warum muss man hier typename hinschreiben???
 	IT = std::find(container.begin(), container.end(), value);
 		if(IT != container.end()){

@@ -17,14 +17,13 @@ class Span
 		~Span();
 
 		Span &		operator=( Span const & rhs );
-		void	addNumber(int number);
-		unsigned int getStorage(void) const;
-		int				getValue(unsigned int i)const;
-		std::vector<int>& getVector();
-		unsigned int shortestSpan();
-		unsigned int longestSpan();
-		void	addNumber(std::vector<int> anotherVector);
-		//
+		void				addNumber(int number);
+		void				addNumber(std::vector<int> anotherVector);
+		unsigned int 		getStorage(void) const;
+		int					getValue(unsigned int i)const;
+		std::vector<int>& 	getVector();
+		unsigned int 		shortestSpan();
+		unsigned int 		longestSpan();
 
 	private:
 		Span();

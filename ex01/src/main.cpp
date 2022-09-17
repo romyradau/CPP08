@@ -31,6 +31,7 @@ int main(){
 		try{
 			std::vector<int> anotherVector(10, 100);
 			Span newSpan = Span(10);
+			std::cout << newSpan << std::endl;
 			newSpan.addNumber(6);
 			newSpan.addNumber(3);
 			newSpan.addNumber(17);
@@ -39,7 +40,7 @@ int main(){
 			for (int i = 0; i < newSpan.getVector().size(); i++)
 				std::cout << newSpan.getValue(i) << std::endl;
 		}
-				catch(std::exception & ex){
+		catch(std::exception & ex){
 			std::cout << ex.what() << std::endl;
 		}
 	}

@@ -51,5 +51,3 @@ int	main(){
 
 
 }
-//zugang efolgt uber den iterator und nicht eber den Vektor selbst
-//random access iterators kann man um meherer elemente verschieben
